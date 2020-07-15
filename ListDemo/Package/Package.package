@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="2eab1622-e242-4f16-b824-2f0bfa2bf807" 
+        solutionId="2eab1622-e242-4f16-b824-2f0bfa2bf807" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="ListDemo"
+        sharePointProductVersion="15.0">
+</package>
