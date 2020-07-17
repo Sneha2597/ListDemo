@@ -22,8 +22,12 @@ jobs:
     - name: Install dependencies
       run: dotnet restore
       
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
+    - name: setup-msbuild
+      uses: microsoft/setup-msbuild@v1
+      with:
+    # Version of Visual Studio to search; defaults to latest if not specified
+        vs-version: 14.0.25431.01
+    
       
     - name: Test
       run: dotnet test --no-restore --verbosity normal
