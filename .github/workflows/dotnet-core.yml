@@ -27,6 +27,12 @@ jobs:
       with:
     # Version of Visual Studio to search; defaults to latest if not specified
         vs-version: 14.0.25431.01
-
-    - name: Publish
-      run: dotnet publish -c Release -o dotnetcorewebapp 
+    - name: Deploy to Server
+      uses: Sneha2597/ssh-deploy@v2.1.1
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          SOURCE: "dist/"
+          REMOTE_HOST: github.com
+          REMOTE_USER: Sneha2597
+          TARGET: https://github.com/Sneha2597/ListDemo/tree/master/ListDemo
+   
