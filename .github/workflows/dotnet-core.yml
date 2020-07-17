@@ -27,10 +27,6 @@ jobs:
       with:
     # Version of Visual Studio to search; defaults to latest if not specified
         vs-version: 14.0.25431.01
-    
-      
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
 
     - name: Publish
       run: dotnet publish
