@@ -34,5 +34,5 @@ jobs:
           SOURCE: "dist/"
           REMOTE_HOST: github.com
           REMOTE_USER: Sneha2597
-          TARGET: git@github.com:Sneha2597/ListDemo.git
+          TARGET: git@github.com:Sneha2597/listDemo.git
    
