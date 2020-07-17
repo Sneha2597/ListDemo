@@ -27,6 +27,7 @@ jobs:
       with:
     # Version of Visual Studio to search; defaults to latest if not specified
         vs-version: 14.0.25431.01
-
+|
+        
     - name: Publish
-      run: dotnet publish
+      run: dotnet publish -c Release -o dotnetcorewebapp 
